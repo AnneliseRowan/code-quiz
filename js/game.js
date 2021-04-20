@@ -1,5 +1,5 @@
 const question = document.querySelector("#question"); 
-const choices = Array.from(document.querySelectorAll(".choice-text")); 
+const choices = Array.from(document.querySelectorAll(".choice-answer")); 
 const scoreText = document.querySelector("#score");
 const timeLeft = document.querySelector("#time-left"); 
 
@@ -65,7 +65,7 @@ startGame = () => {
 }
 
 function countdown() {
-    var countDown = 75;
+    let countDown = 75;
     let timeInterval = setInterval(function () {
       if (countDown > 1) {
         timeLeft.textContent = "Timer : " + countDown;
@@ -73,6 +73,7 @@ function countdown() {
       } else {
         timeLeft.textContent = 'Time is up!';
         clearInterval(timeInterval);
+        return window.location.assign("../html/end.html");
         }
     }, 1000);
 }
@@ -100,8 +101,8 @@ var getNewQuestions = function() {
     acceptingAnswer = true; 
 }
 
-choices.forEach(choice => {
-    choice.addEventListener("click", e => {
+choices.forEach(function(choice) {
+    choice.addEventListener("click", function(e) {
         if(!acceptingAnswer) return;
         
         acceptingAnswer = false; 
@@ -127,7 +128,7 @@ choices.forEach(choice => {
     })
 })
 
-incrementScore = num => {
+incrementScore = function(num) {
     score += num;
     scoreText.innerText = score;
 }

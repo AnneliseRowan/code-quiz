@@ -2,29 +2,29 @@ body {
     color: white; 
 }
 
-.choice-container {
+.choice-box {
     display: flex; 
-    margin-bottom: 0.8rem;
+    margin-bottom: 12.8px;
     width: 100%; 
     border-radius: 4px;
     background: blue;  
-    font-size: 3rem; 
-    min-width: 80rem; 
+    font-size: 48px; 
+    min-width: 1280px; 
 }
 
-.choice-container:hover {
+.choice-box:hover {
     cursor: pointer;
     transform: scale(1.02);
     transform: transform 100ms; 
 }
 
-.choice-prefix {
-    padding: 2rem 2.5rem; 
+.choice-letter {
+    padding: 32px 40px; 
     color: white; 
 }
 
-.choice-text {
-    padding: 2rem; 
+.choice-answer {
+    padding: 32px; 
     width: 100%; 
 }
 
@@ -37,22 +37,22 @@ body {
 }
 
 #time-left {
-    font-size: 3rem;
+    font-size: 48px;
 }
 
-.hud-prefix {
+.score-top {
     text-align: center;
-    font-size: 2rem; 
-    padding: 1rem; 
+    font-size: 32px; 
+    padding: 16px; 
 }
 
-.hud-main-text {
+.score-text {
     text-align: center;
 }
 
 
 @media screen and (max-width: 768px) {
     .choice-container {
-        min-width: 40rem; 
+        min-width: 640px; 
     }
 }

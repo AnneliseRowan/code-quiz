@@ -9,13 +9,11 @@ const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore; 
 
-console.log(mostRecentScore); 
-
 username.addEventListener("keyup", function() {
     saveScoreBtn.disabled = !username.value 
 })
 
-saveHighScore = e => {
+saveHighScore = function(e) {
     e.preventDefault(); 
 
     const score = {
@@ -25,7 +23,7 @@ saveHighScore = e => {
 
     highScores.push(score);
 
-    highScores.sort((a,b) => {
+    highScores.sort(function(a,b) {
         return b.score - a.score
     })
 
@@ -33,6 +31,4 @@ saveHighScore = e => {
 
     localStorage.setItem("highScores", JSON.stringify(highScores))
     window.location.assign("../index.html")
-
-
 }
