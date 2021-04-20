@@ -2,6 +2,8 @@ const question = document.querySelector("#question");
 const choices = Array.from(document.querySelectorAll(".choice-answer")); 
 const scoreText = document.querySelector("#score");
 const timeLeft = document.querySelector("#time-left"); 
+const correctSound = new Audio("../sound/symphonic-slam-sound-effect.mp3");
+const incorrectSound = new Audio("../sound/punch-sound-effect.mp3"); 
 
 
 let currentQuestion = {};
@@ -113,11 +115,11 @@ choices.forEach(function(choice) {
 
         if(classToApply === "correct") {
             incrementScore(SCORE_POINTS)
+            correctSound.play(); 
+        } else {
+            incorrectSound.play(); 
         }
 
-        if(classToApply === "incorrect") {
-            timeLeft - 5; 
-        }
 
         selectedChoice.parentElement.classList.add(classToApply);
 

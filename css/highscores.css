@@ -2,6 +2,10 @@ body {
     color: #EDF5E1; 
 }
 
+#finalScore {
+    text-decoration: underline;
+}
+
 #highScoresList {
     list-style: none; 
     margin-bottom: 64px; 
