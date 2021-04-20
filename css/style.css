@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 :root {
-    background-color: rgb(29, 26, 26); 
+    background-color: #05386B; 
 }
 
 * {
@@ -14,7 +14,7 @@
 
 h1 {
     font-size: 5.4rem; 
-    color: #fff; 
+    color: #EDF5E1; 
     margin-bottom: 5rem; 
 }
 
@@ -63,8 +63,8 @@ h2 {
     text-align: center;
     margin-bottom: 16px;
     text-decoration: none;
-    color: rgb(29, 26, 26);
-    background: skyblue;
+    color: #05386B;
+    background: #8EE4AF;
     border-radius: 4px;
 }
 
@@ -81,7 +81,7 @@ h2 {
 }
 
 #highscore-btn {
-    background: goldenrod;
+    background: #379683;
 }
 
 .end-box {
@@ -101,7 +101,7 @@ input {
 }
 
 input::placeholder {
-    color: #aaa; 
+    color: #EDF5E1; 
 }
 
 #username {
@@ -112,7 +112,7 @@ input::placeholder {
 
 #end-text {
     font-size: 38.4px; 
-    color: white; 
+    color: #EDF5E1; 
     text-align: center; 
 }
 

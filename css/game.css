@@ -1,5 +1,6 @@
 body {
-    color: white; 
+    color: #379683; 
+    font-weight: bold;
 }
 
 .choice-box {
@@ -7,7 +8,7 @@ body {
     margin-bottom: 12.8px;
     width: 100%; 
     border-radius: 4px;
-    background: blue;  
+    background: #8EE4AF;  
     font-size: 48px; 
     min-width: 1280px; 
 }
@@ -29,11 +30,11 @@ body {
 }
 
 .correct {
-    background: greenyellow; 
+    background: #AFD275; 
 }
 
 .incorrect {
-    background: red; 
+    background: #E7717D; 
 }
 
 #time-left {
