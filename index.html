@@ -4,66 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>LOTR QUIZ</title>
 </head>
 <body>
-    <div id="start_btn"><button>Start Quiz!</button></div>
-
-    <div id="info_box">
-        <div id="info_title"> 
-            <span>Some Rules of this Quiz</span>
-        </div>
-        <div id="info_list">
-            <div class="info">1. Lorem ipsum dolor sit amet <span>15 seconds</span>consectetur adipisicing elit.</div>
-            <div class="info">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis eum cu</div>
-            <div class="info">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis eum cu</div>
-            <div class="info">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis eum cu</div>
-        </div>
-        <div class="buttons">
-            <button id="quit">Exit Quiz</button>
-            <button id="restart">Continue</button>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <h1>Are you ready?</h1>
+            <a href="./html/game.html" class="btn">Play</a>
+            <a href="./html/highscores.html" id="highscore-btn" class="btn">High Scores 👑</a>
         </div>
     </div>
-
-    <div id="quiz_box">
-        <header>
-            <div id="title">Awesome Quiz Application</div>
-            <div id="timer">
-                <div id="time_text">Time Left</div>
-                <div id="timer_sec">15</div>
-            </div>
-        </header>
-        <section>
-            <div class="que_text">
-                <span>"Who possesses the ring of power at the start of the trilogy?"</span>
-            </div>
-            <div class="option_list">
-                <div class="option">
-                    <span>Gandalf</span>
-                    <div class="icon tick"><i class="fa fa-check"></i></div>
-                </div>
-                <div class="option">
-                    <span>Sauron</span>
-                    <div class="icon cross"><i class="fa fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Bilbo</span>
-                </div>
-                <div class="option">
-                    <span>Frodo</span>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div id="total_que">
-                <span><p>2</p>of<p>5</p>Questions</span>
-            </div>
-            <button id="next_btn">Next Q</button>
-        </footer>
-    </div>
-    
+    <script src="./js/game.js"></script>
 </body>
 </html>
