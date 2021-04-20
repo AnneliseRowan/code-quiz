@@ -36,10 +36,14 @@ body {
     background: red; 
 }
 
+#time-left {
+    font-size: 3rem;
+}
 
 .hud-prefix {
     text-align: center;
     font-size: 2rem; 
+    padding: 1rem; 
 }
 
 .hud-main-text {
