@@ -55,7 +55,7 @@ let questions = [
     }
 ];
 
-const SCORE_POINTS = 50; 
+const SCORE_POINTS = 25; 
 const MAX_QUESTIONS = 5;
 let countDown = 60; 
 
