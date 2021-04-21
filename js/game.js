@@ -58,8 +58,9 @@ let questions = [
 
 const SCORE_POINTS = 50; 
 const MAX_QUESTIONS = 5;
+let countDown = 60;
 
-startGame = () => {
+function startGame() {
     questionCounter = 0; 
     score = 0; 
     availableQuestions = [...questions]; 
@@ -67,7 +68,6 @@ startGame = () => {
 }
 
 function countdown() {
-    let countDown = 75;
     let timeInterval = setInterval(function () {
       if (countDown > 1) {
         timeLeft.textContent = "Timer : " + countDown;
@@ -79,6 +79,7 @@ function countdown() {
         }
     }, 1000);
 }
+
 
 var getNewQuestions = function() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -116,10 +117,11 @@ choices.forEach(function(choice) {
         if(classToApply === "correct") {
             incrementScore(SCORE_POINTS)
             correctSound.play(); 
-        } else {
+        } else { 
+            countDown-=10; 
+            timeLeft.textContent = "Timer : " + countDown;
             incorrectSound.play(); 
         }
-
 
         selectedChoice.parentElement.classList.add(classToApply);
 
@@ -135,7 +137,5 @@ incrementScore = function(num) {
     scoreText.innerText = score;
 }
 
-
-
-countdown(); 
+countDown(); 
 startGame(); 
