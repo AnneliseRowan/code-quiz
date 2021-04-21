@@ -55,12 +55,11 @@ let questions = [
     }
 ];
 
-
 const SCORE_POINTS = 50; 
 const MAX_QUESTIONS = 5;
-let countDown = 60;
+let countDown = 60; 
 
-function startGame() {
+startGame = () => {
     questionCounter = 0; 
     score = 0; 
     availableQuestions = [...questions]; 
@@ -79,7 +78,6 @@ function countdown() {
         }
     }, 1000);
 }
-
 
 var getNewQuestions = function() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -117,8 +115,8 @@ choices.forEach(function(choice) {
         if(classToApply === "correct") {
             incrementScore(SCORE_POINTS)
             correctSound.play(); 
-        } else { 
-            countDown-=10; 
+        } else {
+            countDown-=10;
             timeLeft.textContent = "Timer : " + countDown;
             incorrectSound.play(); 
         }
@@ -137,5 +135,6 @@ incrementScore = function(num) {
     scoreText.innerText = score;
 }
 
-countDown(); 
+countdown(); 
 startGame(); 
+
