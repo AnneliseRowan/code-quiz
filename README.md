@@ -7,5 +7,5 @@ The links is : https://anneliserowan.github.io/code-quiz/
 
 And here is a bit of a preview of the quiz: 
 
-!(video/LOTR QUIZ.mp4)
+![](video/LOTR QUIZ.mp4)
 
