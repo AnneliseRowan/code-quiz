@@ -14,12 +14,12 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question : "Who possesses the ring of power at the start of the trilogy?",
-        choice1 : "Gandalf",
-        choice2 : "Frodo",
-        choice3 : "Bilbo",
-        choice4 : "Sauron", 
-        answer : 4,
+        question : "What makes Merry and Pippin grow taller than other hobbits?",
+        choice1 : "The magic spells of Treebeard",
+        choice2 : "The water in Fangorn",
+        choice3 : "The spells of white wizard",
+        choice4 : "The food of the Ents", 
+        answer : 2,
     },
     {
         question : "Who do the hobbits encounter at the Prancing Pony?",
@@ -59,7 +59,7 @@ const SCORE_POINTS = 25;
 const MAX_QUESTIONS = 5;
 let countDown = 60; 
 
-startGame = () => {
+function startGame() {
     questionCounter = 0; 
     score = 0; 
     availableQuestions = [...questions]; 
@@ -81,9 +81,9 @@ function countdown() {
 
 var getNewQuestions = function() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem("mostRecentScore", score)
+        localStorage.setItem("mostRecentScore", score);
 
-        return window.location.assign("../html/end.html")
+        return window.location.assign("../html/end.html");
     }
 
     questionCounter++;
@@ -113,7 +113,7 @@ choices.forEach(function(choice) {
         let classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
         if(classToApply === "correct") {
-            incrementScore(SCORE_POINTS)
+            incrementScore(SCORE_POINTS);
             correctSound.play(); 
         } else {
             countDown-=10;
@@ -125,7 +125,7 @@ choices.forEach(function(choice) {
 
         setTimeout(function() {
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestions()
+            getNewQuestions();
         }, 500)
     })
 })
