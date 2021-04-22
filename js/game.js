@@ -67,7 +67,7 @@ function startGame() {
 }
 
 function countdown() {
-    let timeInterval = setInterval(function () {
+    let timeInterval = setInterval(function() {
       if (countDown > 1) {
         timeLeft.textContent = "Timer : " + countDown;
         countDown--;
@@ -79,10 +79,9 @@ function countdown() {
     }, 1000);
 }
 
-var getNewQuestions = function() {
+function getNewQuestions() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-
         return window.location.assign("../html/end.html");
     }
 
@@ -95,7 +94,7 @@ var getNewQuestions = function() {
     choices.forEach(function(choice) {
         const number = choice.dataset["number"];
         choice.innerText = currentQuestion["choice" + number]; 
-    })
+    });
 
     availableQuestions.splice(questionsIndex, 1);
 
@@ -130,7 +129,7 @@ choices.forEach(function(choice) {
     })
 })
 
-incrementScore = function(num) {
+function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
 }
