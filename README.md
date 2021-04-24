@@ -9,7 +9,7 @@ And here is a bit of a preview of the quiz:
 
 ![](images/screencapture-anneliserowan-github-io-code-quiz-2021-04-21-12_14_43.png)
 
-![](images/screencapture-anneliserowan-github-io-code-quiz-html-game-html-2021-04-21-12_15_00.png)
+![](images/screencapture-127-0-0-1-5500-code-quiz-html-game-html-2021-04-24-12_04_55.png)
 
 ![](images/screencapture-anneliserowan-github-io-code-quiz-html-end-html-2021-04-21-12_15_17.png)
 
