@@ -5,12 +5,12 @@ body {
 
 .choice-box {
     display: flex; 
-    margin-bottom: 12.8px;
+    margin-bottom: 12px;
     width: 100%; 
     border-radius: 4px;
     background: #8EE4AF;  
     font-size: 48px; 
-    min-width: 1280px; 
+    min-width: 640px; 
 }
 
 .choice-box:hover {
@@ -39,6 +39,7 @@ body {
 
 #time-left {
     font-size: 48px;
+    margin-top: 45px; 
 }
 
 .score-top {
@@ -52,8 +53,9 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 640px; 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 32px;
     }
+    margin-top: 50px; 
 }
