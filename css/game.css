@@ -39,13 +39,13 @@ body {
 
 #time-left {
     font-size: 48px;
-    margin-top: 45px; 
+    margin-top: 100px; 
 }
 
 .score-top {
     text-align: center;
     font-size: 32px; 
-    padding: 16px; 
+    padding: 5px; 
 }
 
 .score-text {
@@ -53,9 +53,3 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 32px;
-    }
-    margin-top: 50px; 
-}
