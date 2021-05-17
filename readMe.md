@@ -1,11 +1,12 @@
-# code-quiz
+# Lord of the Rings Code-Quiz
 
+## About
 Created a fun Lord of the Rings Quiz. Let's test your knowledge and see if you are welcome to MiddleEarth!
 
 The links is : https://anneliserowan.github.io/code-quiz/
 
 
-And here is a bit of a preview of the quiz: 
+## Demo 
 
 ![](images/screencapture-anneliserowan-github-io-code-quiz-2021-04-21-12_14_43.png)
 
