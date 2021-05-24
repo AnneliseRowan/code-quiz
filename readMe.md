@@ -3,6 +3,10 @@
 ## About
 Created a fun Lord of the Rings Quiz. Let's test your knowledge and see if you are welcome to MiddleEarth!
 
+•	Created a fun Lord of the Rings quiz to test individuals’ knowledge of MiddleEarth. 
+•	Used Javascript, CSS, and HTML with Local Storage. There is a timer and each time a wrong answer is chosen the time will cut down. It prompts you for your name and will save it on the High Scores page. 
+
+
 The links is : https://anneliserowan.github.io/code-quiz/
 
 
